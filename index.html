@@ -63,7 +63,46 @@
     <div id="wrapper">
         <h1>IceMe</h1>
         <h2>Dégustez une glace</h2>
-        <button type="button" class="btn btn-primary">Commander une glace</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderform">
+          Commander une glace
+        </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="orderform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Commander</h4>
+          </div>
+
+          <div class="modal-body">
+          <div id="wufoo-r1j1ni7e1xvzgce">
+            Fill out my <a href="https://tsevrez.wufoo.com/forms/r1j1ni7e1xvzgce">online form</a>.
+            </div>
+            <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+            <script type="text/javascript">var r1j1ni7e1xvzgce;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'tsevrez',
+            'formHash':'r1j1ni7e1xvzgce',
+            'autoResize':true,
+            'height':'654',
+            'async':true,
+            'host':'wufoo.com',
+            'header':'show',
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { r1j1ni7e1xvzgce = new WufooForm();r1j1ni7e1xvzgce.initialize(options);r1j1ni7e1xvzgce.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <div class="spacer"></div>
