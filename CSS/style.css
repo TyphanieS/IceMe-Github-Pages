@@ -80,3 +80,7 @@ body {
 .navbar-transparent .navbar-brand:focus {
   color: white;
 }
+
+.headModal {
+	height: 1em;
+}
